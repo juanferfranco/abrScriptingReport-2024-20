@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Aprendizaje robusto</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<section>
+					<section data-auto-animate>
+						<h1>
+							<span id="word" style="color:aquamarine;">APRENDIZAJE ROBUSTO</span>
+						</h1>
+						<h4 style="text-transform: none;">¿Cómo diseñar experiencias de aprendizaje que fomenten 
+							el aprendizaje robusto?
+						</h4>
+						<p>Por: Pauli Gómez y Juan Franco</p>
+					</section>
+
+					<section data-auto-animate>
+						<h1>
+							<span id="word" style="color:lightcoral;">APRENDIZAJE BASADO EN RETOS</span>
+						</h1>
+						<h4 style="text-transform: none;">¿Cómo diseñar experiencias de aprendizaje que fomenten 
+							el aprendizaje robusto?
+						</h4>
+						<p>Por: Pauli Gómez y Juan Franco</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">Nuestro propósito superior</h3>
+						<p> "<span style="color:lightcoral">Creemos</span> en 
+							las capacidades del ser 
+							humano, en un estilo 
+							de vida sostenible; 
+							<span style="color:lightcoral">imaginamos</span> y 
+							<span style="color:lightcoral">creamos</span> 
+							juntos soluciones a los 
+							retos de la humanidad 
+							y del planeta" (PEI_2024)
+						</p>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">¿Cómo lo pensamos dinamizar?</h3>
+						<p> 
+							Con un modelo pedagógico centrado en el estudiante y su aprendizaje significativo
+						</p>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">Tenemos un gran RETO</h3>
+						<div style="display: flex; gap: 20px; align-items: center; justify-content: center; height: 100%;">
+							<div style="flex: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+							  <h2>
+								<p>¡Creer,</p>
+								<p>Imaginar y</p>
+								<p>Crear!</p>
+							  </h2>
+							</div>
+						  
+							<div style="flex: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+							  <p style="line-height: 0.2;">Complejidad emergente</p>
+							  <p style="line-height: 0.2;">Caos</p>
+							  <p style="line-height: 0.2;">Problemas dinámicos</p>
+							  <p style="line-height: 0.2;">Ambigüedad</p>
+							  <p style="line-height: 0.2;">Incertidumbre</p>
+							  <p style="line-height: 0.2;">Innovaciones disruptivas</p>
+							</div>
+						  </div>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">Actividad 1</h3>
+						En este contexto, el aprendizaje significativo ¿Se queda corto 
+						para lograr el gran propósito de la Universidad?
+
+					</section>
+
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">Actividad</h3>
+						<p>Tiempo restante: </p>
+						<p><span class="timer" data-time="10" data-emoji="🚀">05:00</span> </p>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">Competencias</h3>
+						"Las competencias son definidas por la UPB como la actuación integral para 
+						identificar, interpretar, argumentar y resolver problemas del 
+						<span style="color: lightcoral;">contexto</span> 
+						integrando conceptos y teorías, actitudes y valores, y habilidades 
+						procedimentales y técnicas."
+					</section>
+
+					<section>
+						<h3>Actividad 2</h3>
+							¿Consideras que tu curso aborda algunos retos del futuro?
+					</section>
+
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">Actividad</h3>
+						<p>Tiempo restante:</p> 
+						<p><span class="timer" data-time="10" data-emoji="🌟">05:00</span></p>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">
+							¿Estamos preparados para los retos disruptivos del futuro?
+						</h3>
+						Es plausible considerar que no es así.
+					</section>
+
+					<section id="slide-sim-complex">
+						<div class="sim-p5" id="sim-complex"></div>
+					</section>
+
+					<section>
+						<h3>
+							¿Es suficiente el aprendizaje significativo?
+						</h3>
+						Creemos que es necesario, pero no suficiente. Proponemos 
+						enfatizar en la transferencia, la adaptabilidad y la reflexión: 
+						aprendizaje <span style="color: lightcoral;">robusto</span>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">¿Qué es el aprendizaje robusto?</h3>
+						<p>El aprendizaje robusto es aquel que crea redes
+							<span style="color: lightcoral;">duraderas</span>, <span style="color: lightcoral;">profundas</span> y 
+							<span style="color: lightcoral;">transferibles</span> de conocimiento, formando una base sólida para 
+							el aprendizaje futuro, la adaptación y la aplicación a nuevos desafíos y oportunidades.
+						</p>
+					</section>
+
+					<section data-auto-animate>
+						<h3>Nuestro propósito superior</h3>
+							<span class="fragment" data-fragment-index="1">¡Creer, Imaginar y Crear!</span>
+							<br>
+							<span class="fragment" data-fragment-index="2">En un contexto incierto</span>
+							<br>
+							<span class="fragment" data-fragment-index="3">Mediante la centralidad en el desarrollo del 
+								estudiante y su aprendizaje <br> </span>
+							<span class="fragment" data-fragment-index="4">
+								<span style="color: lightcoral">significativo</span> y 
+								<span style="color: lightcoral">robusto</span> </span>
+							</section>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h3 style="text-transform: none;">¿Cómo mido el aprendizaje robusto?</h3>
+						<p> Mido el aprendizaje robusto evaluando la capacidad del estudiante para transferir y 
+							aplicar el conocimiento en situaciones nuevas y complejas, observando conexiones 
+							profundas y la flexibilidad en el uso de lo aprendido
+						</p>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none;">Ingeniería en diseño de entretenimiento digital</h3>
+						<p>Curso scripting 2024-10</p>
+					</section>
+
+					<section>
+						<h3>Reto:</h3>
+						<p>Scripting es un curso de programación que no motiva a 
+							<span style="color:lightcoral">cada estudiante</span> porque no le encuentran 
+							<span style="color:lightcoral">valor</span> a lo que están aprendiendo.
+						</p>
+					</section>
+
+					<section>
+						<h3>¿Rediseño el curso?<br>(2023-20):</h3>
+						<p>¿Por dónde arranco?</p>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none;">De los resultados de aprendizaje:</h3>
+						<p>Resultados de aprendizaje: es lo esperamos 
+							que el estudiante sepa y demuestre <br>
+							<span style="color: lightcoral;">al finalizar los estudios</span>.
+						</p>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none;">Scripting es un curso de quinto semestre</h3>
+						<p> Si el resultado de aprendizaje es lo que se espera al finalizar 
+							los estudios entonces el curso debe diseñarse para fomentar un 
+							aprendizaje profundo, persistente y transferible.
+						</p>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none;">¿Cómo logro este tipo de aprendizaje?</h3>
+						<p>Con esfuerzo coginitivo</p>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none;">La mala noticia es</h3>
+						<a href="https://psycnet.apa.org/record/2025-07056-001" target="_blank">
+							<img src="./assets/pensarApesta.png" class="full-height">
+						</a>
+					</section>
+
+					<section data-auto-animate>
+						<h3 style="text-transform: none;" data-fragment-index="1">Vamos así:</h3>
+						  <span class="fragment" data-fragment-index="2">Para aprender de manera profunda, persistente y transferible → </span>
+						  <br>
+						  <span class="fragment" data-fragment-index="3">Se requiere esfuerzo cognitivo → </span>
+						  <br>
+						  <span class="fragment" data-fragment-index="4">Pero este genera aversión</span>
+					</section>
+
+					<section>
+						<h3>El reto de diseño es:</h3>
+						<p> Hay que conseguir <span style="color: lightcoral;">motivar </span> 
+							el esfuerzo cognitivo</p>
+					</section>
+
+					<section>
+						<h3>¿Qué es la motivación?</h3>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none;">Ingeniería del aprendizaje</h3>
+						<a href="https://riverapublications.com/article/engineering-motivation-using-the-belief-expectancy-control-framework" target="_blank">
+							Belief-Expectancy-Control Framework
+						</a>
+					</section>
+
+					<section>
+						<p>
+							La motivación es un proceso cognitivo y afectivo que influye en si las personas 
+							<span style="color: lightcoral;">inician</span> 
+							una tarea de aprendizaje, <span style="color: lightcoral;">persisten</span> en 
+							ella e invierten el <span style="color: lightcoral;">esfuerzo mental</span> adecuado 
+							para tener éxito
+						</p>
+					</section>
+
+					<section>
+						<p>
+							"…La motivación y las estrategias de aprendizaje contribuyen aproximadamente al mismo porcentaje 
+							de impacto en el aprendizaje y la transferencia del aprendizaje (Snow, 1996), por lo que parece 
+							razonable sugerir que la motivación merece mucha más atención de la que ha recibido en el pasado…”
+						</p>
+					</section>	
+					
+					<section>
+						<h3 style="text-transform: none;">
+							Entonces, considerarando todo lo anterior: 
+						</h3>
+						<p>Diseñar el curso para la motivación: incio, persistencia, esfuerzo mental</p>
+						<p>Diseñar el curso para la aprendizaje profunda, persistente y transferible</p>
+					</section>
+
+					<section>
+						<h3> ¿Cambia mi rol en un curso diseñado para la motivación?
+						</h3>
+					</section>
+
+					<section>
+						<h3>Si, mi rol es observar estos factores que afectan la motivación:</h3>
+						<p>Valor → me importa</p>
+						<p>Autoeficacia → soy capaz</p>
+						<p>Emociones → mi estado mental</p>
+						<p>Errores de atribución → esto no está bajo mi control</p>
+					</section>
+
+					<section>
+						<h3>
+							Y luego, durante el curso qué hago con esos factores?
+						</h3>
+						<p>Los mido (usando el marco BEC)</p>
+						<p>Evalúo cual es el problema motivacional</p>
+						<p>Selecciono la intervención</p>
+
+					</section>
+
+					<section>
+						<h3>
+							Todo eso suena muy bonito, pero
+						</h3>
+						<p>¿Cómo se hace todo esto mientras estoy "dictando clase"?</p>
+					</section>					
+
+					<section>
+						<h3>
+							¡El momento de las renuncias ha llegado!
+						</h3>
+					</section>						
+
+					<section>
+						<h3>
+							Renuncio a la clase magistral "tradicional"
+						</h3>
+						<a href="https://www.lindau-nobel.org/blog-active-learning-with-carl-e-wieman-dont-lecture-me/" target="_blank">
+							<img src="./assets/Weiman.png" class="full-height">
+						</a>
+					</section>						
+
+					<section>
+						<h3>Dolor 1:</h3>
+						<p>¿Si será capaz?</p>
+					</section>
+
+					<section>
+						<h3>
+							¿Qué marcos de aprendizaje activo conozco?
+						</h3>
+						<p>ABR: aprendizaje basado en retos</p>
+						<p>ABP:aprendizaje basado en problemas</p>
+						<p>ABPy: aprendizaje basado en proyectos</p>
+					</section>					
+
+					<section>
+						<h3 style="text-transform: none;">
+							<p>¿Todos se parecen mucho &#128521;?</p>
+						</h3>
+					</section>					
+
+					<section>
+						El ABR se centra en la definición y exploración del reto por parte de los estudiantes
+					</section>
+
+					<section>
+						El ABP se enfoca en la resolución de un problema ya definido, con énfasis en el 
+						proceso de aprendizaje
+					</section>
+
+					<section>
+						El ABPy pone énfasis en la creación de un producto final tangible como resultado del proyecto
+					</section>
+
+					<section>
+						En ABR los estudiantes tienen un papel activo en la definición del problema
+					</section>
+
+					<section>
+						El ABR se caracteriza por la definición del reto y la elección del enfoque por 
+						parte de los estudiantes, mientras que en el ABP el problema ya está claramente 
+						definido desde el inicio.
+					</section>
+					
+					<section>
+						El ABR enfatiza la exploración y definición del reto por parte de los estudiantes, 
+						mientras que el ABPy se centra en la ejecución de un proyecto predefinido con un 
+						producto final claro.
+					</section>
+
+					<section>
+						<h3>
+							Selecciono ABR
+						</h3>
+					</section>	
+
+					<section>
+						<h3>¿Por qué?</h3>
+						<p>Si cada estudiante define su propio reto</p>
+						<p>&#8594; Espero un impacto mayor en la motivación de CADA UNO</p>
+					</section>	
+
+					<section>
+						<h3 style="text-transform: none;">
+							¿Cómo funciona el ABR?
+						</h3>
+						<a href="https://www.challengebasedlearning.org/framework/" target="_blank">
+							<img src="./assets/CBLFramework.png" class="full-height">
+						</a>
+					</section>	
+
+					<section>
+						<h3>ECIU University</h3>
+						<a href="https://youtu.be/CFCSvvsPWUA?si=tnnXwcaSmqsHHUS6" target="_blank">
+							<img src="./assets/ECIU.png" class="full-height">
+						</a>
+					</section>
+
+					<section>
+						<h3>Dolor 2</h3>
+						<p>Pero tengo un "problemita"… las restricciones curriculares: </p>
+						<p>"...Es que los estudiantes TIENEN QUE VER estos contenidos..."</p>
+					</section>
+
+					<section>
+						<h3>¿Cómo lo resolví?</h3>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none;">
+							<p>Se los cuento en la próxima temporada &#128540;</p>
+							<p>juanf.franco@upb.edu.co</p>
+						</h3>
+					</section>					
+
+					<section>
+						<h3>
+							Punto de partida: personalizar el marco ABR
+						</h3>
+						<p>RAE1: diseño aplicaciones (autónomo)</p>
+						<p>RAE2: construyo aplicaciones (autónomo)</p>
+						<p>RAE3: pruebo las aplicaciones (autónomo)</p>
+					</section>	
+
+					<section>
+						<h3>
+							Enunciado ABR:
+						</h3>
+						<p style="font-size: 0.8em;">
+							Explora los desafíos más significativos que enfrentan los desarrolladores 
+							en la creación de aplicaciones interactivas dentro de tu área de énfasis 
+							(videojuegos, animación, experiencias interactivas). Identifica un reto 
+							clave relacionado con la optimización del flujo de trabajo, la mejora de 
+							la creatividad o la funcionalidad en estas áreas. Define este reto y 
+							desarrolla una solución innovadora que utilice técnicas procedurales o de 
+							automatización para abordarlo. Asegúrate de que la solución propuesta tenga 
+							un impacto tangible en la eficiencia, creatividad o funcionalidad.
+						</p>						
+					</section>	
+
+					<section data-auto-animate>
+						<h3>Dolor 3:</h3>
+						<p class="fragment" data-fragment-index="1">
+							Todos experimentamos malestar debido a la incertidumbre
+						</p>
+						<p class="fragment" data-fragment-index="2">La ansiedad por alcanzar las evidencias de los 
+						   <span style="color: lightcoral;">resultados</span> de aprendizaje
+						   "traiciona" el sentido de la experiencia: la meta no es el resultado, la meta 
+						   es el desarrollo cognitivo a través del proceso.</p>
+					</section>
+
+					<section data-auto-animate>
+						<h3>Me pregunto</h3>
+						<p class="fragment" data-fragment-index="1">
+							¿Es posible un sistema educativo centrado en el proceso y no 
+							en el <span style="color: lightcoral;">resultado</span>?
+						</p>
+						<p class="fragment" data-fragment-index="2">
+							¿Es posible un sistema educativo diseñado para promover el 
+							aprendizaje robusto?
+						</p>
+					</section>
+
+					<section>
+						<h3>Actividad 3</h3>
+						<p>¿Cómo podríamos medir el aprendizaje robusto?</p>
+						<p>En el marco de situaciones nuevas y complejas cargadas 
+							de incertidumbre, <br>
+							no hay respuesta correctas o incorrectas.
+						</p>
+							
+					</section>
+
+					<section>
+						<h3>Actividad</h3>
+						<p>Tiempo restante: </p>
+						<p><span class="timer" data-time="10" data-emoji="🔄">05:00</span> </p>
+					</section>
+				</section>		
+
+
+				<section>
+					<section>
+						<h3 style="text-transform: none;">¿Por dónde inicio?</h3>
+						<p> Una experiencia de aprendizaje que fomenta el aprendizaje robusto desafía al estudiante con 
+							<span style="color:lightcoral">problemas complejos</span>, promueve la 
+							<span style="color: lightcoral;">reflexión</span>, conecta nuevos conocimientos con 
+							los previos y facilita la <span style="color: lightcoral;">aplicación práctica</span> 
+							en diversos contextos
+						</p>
+					</section>
+
+					<section>
+						<h3>
+							Actividad 4
+						</h3>
+						<div style="display: flex; flex-direction: row;">
+							<img src="./assets/actividad1.png">
+							<div style="margin: 20px; text-align: left;">
+								<p>En sus <a href="https://www.mentimeter.com/app/presentation/n/ali28g9scugu7crdkf2hbhhyuxjip5d4/edit?question=ism5s8aok5fb" target="_blank">cursos</a></p>
+								<p>¿Qué quisieran que un estudiante aprenda?</p>
+								<p>¿Estoy diseñando el curso para que ocurra qué?</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3>Actividad</h3>
+						<p>Tiempo restante: </p>
+						<p><span class="timer" data-time="10" data-emoji="🎯">05:00</span> </p>
+					</section>
+
+
+					<section>
+						<h3 style="text-transform: none;">Usar ciclos virtuoso de aprendizaje</h3>					
+					</section>
+
+					<section>
+						<div class="image-box">
+							<img src="./assets/vcol-plus-7-target.png">
+						</div>
+						<p>Modelo propuesto por <a href="https://lectica.org/about/vcol/vcols" target="_blank">Lectica</a></p>
+					</section>
+
+					<section>
+						<h3>Actividad 5</h3>
+						En uno de tus cursos, ¿Cómo diseñarías una experiencia de aprendizaje 
+						que fomente el aprendizaje robusto?
+					</section>
+
+					<section>
+						<h3>Actividad</h3>
+						<p>Tiempo restante: </p>
+						<p><span class="timer" data-time="10" data-emoji="🛠️">05:00</span> </p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">¿Concluimos?</h3>
+					</section>
+
+					<section>
+						<h3 style="text-transform: none; color:aquamarine">El mundo es cada vez más complejo</h3>
+						<p>&#8594; Emergen problemas nuevos y más sofisticados</p>
+						<p>&#8594; El aprendizaje robusto no es una opción, es una PRIORIDAD </p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h3>Actividad 6</h3>
+						<p>¿Qué me llevo hoy?</p>
+						<p>¿Qué me dejó pensando hoy?</p>
+					</section>
+
+					<section>
+						<h3>Actividad</h3>
+						<p>Tiempo restante: </p>
+						<p><span class="timer" data-time="300" data-emoji="💡">05:00</span> </p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+
+			let currentTimerInterval = null;
+
+			// Función para iniciar el cronómetro
+			function startTimer(durationInSeconds, display, emoji) {
+				let timer = durationInSeconds;
+				display.textContent = formatTime(timer); // Mostrar el tiempo inicial inmediatamente
+
+				currentTimerInterval = setInterval(() => {
+					timer--;
+
+					if (timer < 0) {
+						clearInterval(currentTimerInterval);
+						//display.innerHTML  = "&#128512;";
+						display.textContent = emoji;
+						//display.textContent = "00:00";
+						//alert("¡Tiempo terminado!");
+						return;
+					}
+
+					display.textContent = formatTime(timer);
+				}, 1000);
+			}
+
+			// Función para formatear el tiempo en MM:SS
+			function formatTime(seconds) {
+				const minutes = Math.floor(seconds / 60);
+				const remainingSeconds = seconds % 60;
+				return `${minutes < 10 ? '0' : ''}${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+			}
+
+			// Escuchar el evento de cambio de diapositiva
+			Reveal.on('slidechanged', (event) => {
+				// Detener cualquier cronómetro existente
+				if (currentTimerInterval) {
+					clearInterval(currentTimerInterval);
+					currentTimerInterval = null;
+				}
+
+				// Buscar todos los cronómetros en la diapositiva actual
+				const timers = event.currentSlide.querySelectorAll('.timer');
+
+				timers.forEach(timerElement => {
+					// Leer el tiempo inicial desde el atributo data-time
+					const initialTime = parseInt(timerElement.getAttribute('data-time'), 10);
+					const emoji = timerElement.getAttribute('data-emoji');
+					if (!isNaN(initialTime)) {
+						startTimer(initialTime, timerElement,emoji);
+					}
+				});
+			});
+
+
+		</script>
+		    <script src="js/simComplex.js"></script>
+			<script src="js/simAgents.js"></script>
+			<script src="js/simManager.js"></script>
+	</body>
+</html>
